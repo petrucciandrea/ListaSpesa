@@ -1,0 +1,3 @@
+/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/CMakeFiles/ListaSpesa.dir
+/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/CMakeFiles/rebuild_cache.dir
