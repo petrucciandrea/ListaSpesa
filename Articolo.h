@@ -31,7 +31,11 @@ public:
 
     void setStato(bool stato);
 
-    const string to_string()const;
+    const string to_string() const;
+
+    bool operator==(const string str) {
+        return (str == nome);
+    }
 
 protected:
     string nome;

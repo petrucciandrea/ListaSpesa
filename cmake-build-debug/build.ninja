@@ -58,6 +58,12 @@ build CMakeFiles/ListaSpesa.dir/Articolo.cpp.o: CXX_COMPILER__ListaSpesa_Debug /
   OBJECT_DIR = CMakeFiles/ListaSpesa.dir
   OBJECT_FILE_DIR = CMakeFiles/ListaSpesa.dir
 
+build CMakeFiles/ListaSpesa.dir/Lista.cpp.o: CXX_COMPILER__ListaSpesa_Debug /Users/andreapetrucci/CLionProjects/ListaSpesa/Lista.cpp || cmake_object_order_depends_target_ListaSpesa
+  DEP_FILE = CMakeFiles/ListaSpesa.dir/Lista.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/ListaSpesa.dir
+  OBJECT_FILE_DIR = CMakeFiles/ListaSpesa.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ListaSpesa
@@ -66,7 +72,7 @@ build CMakeFiles/ListaSpesa.dir/Articolo.cpp.o: CXX_COMPILER__ListaSpesa_Debug /
 #############################################
 # Link the executable ListaSpesa
 
-build ListaSpesa: CXX_EXECUTABLE_LINKER__ListaSpesa_Debug CMakeFiles/ListaSpesa.dir/main.cpp.o CMakeFiles/ListaSpesa.dir/Articolo.cpp.o
+build ListaSpesa: CXX_EXECUTABLE_LINKER__ListaSpesa_Debug CMakeFiles/ListaSpesa.dir/main.cpp.o CMakeFiles/ListaSpesa.dir/Articolo.cpp.o CMakeFiles/ListaSpesa.dir/Lista.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk
   OBJECT_DIR = CMakeFiles/ListaSpesa.dir
   POST_BUILD = :
