@@ -1,6 +1,10 @@
 #include <iostream>
 
+#include "Articolo.h"
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    auto *a = new Articolo("Mela", "Frutta", 3);
+
+    std::cout << a->to_string() << std::endl;
     return 0;
 }

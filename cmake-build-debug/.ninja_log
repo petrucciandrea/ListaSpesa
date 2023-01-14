@@ -1,0 +1,10 @@
+# ninja log v5
+1	665	1673695519591415175	CMakeFiles/ListaSpesa.dir/Articolo.cpp.o	173777a05dfec3ee
+0	670	1673695519600071532	CMakeFiles/ListaSpesa.dir/main.cpp.o	8b3371fc4ac419a0
+671	739	1673695519672234902	ListaSpesa	fbbf094b7de73fb6
+1	472	1673695682064761919	CMakeFiles/ListaSpesa.dir/Articolo.cpp.o	173777a05dfec3ee
+473	525	1673695682116252890	ListaSpesa	fbbf094b7de73fb6
+2	480	1673695855145280985	CMakeFiles/ListaSpesa.dir/Articolo.cpp.o	173777a05dfec3ee
+480	531	1673695855198837633	ListaSpesa	fbbf094b7de73fb6
+2	504	1673695877858052433	CMakeFiles/ListaSpesa.dir/Articolo.cpp.o	173777a05dfec3ee
+504	554	1673695877910960145	ListaSpesa	fbbf094b7de73fb6
