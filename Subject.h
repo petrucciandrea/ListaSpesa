@@ -10,7 +10,7 @@
 class Subject {
 public:
 
-    virtual void subscribed(Observer *o) = 0;
+    virtual void subscribe(Observer *o) = 0;
 
     virtual void unsubscribe(Observer *o) = 0;
 

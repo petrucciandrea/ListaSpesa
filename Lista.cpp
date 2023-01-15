@@ -35,19 +35,22 @@ const int Lista::getNumArticoli() {
 
 const int Lista::getRimasti() {
     int n = 0;
-
-    for (auto it = articoli.begin(); it != articoli.end(); it++) {
-        if (!it->isStato())
+//    for (auto it = articoli.begin(); it != articoli.end(); it++) {
+//        if (!it->isStato())
+//            n++;
+//    }
+    for (Articolo a: articoli)
+        if (!a.isStato())
             n++;
-    }
     return n;
 }
 
 const string Lista::to_string() const {
     string strOut = getTitolo() + ":\n";
-    for (auto it = articoli.begin(); it != articoli.end(); it++) {
-        strOut += "  -" + it->to_string() + "\n";
-    }
+//    for (auto it = articoli.begin(); it != articoli.end(); it++)
+//        strOut += "    -" + it->to_string() + "\n";
+    for (Articolo a: articoli)
+        strOut += "    -" + a.to_string() + "\n";
     return strOut;
 }
 
