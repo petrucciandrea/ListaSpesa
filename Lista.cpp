@@ -57,7 +57,7 @@ const string Lista::to_string() const {
 bool Lista::compra(const Articolo &a) {
     auto it = find(articoli.begin(), articoli.end(), a.getNome());
     if (it != articoli.end()) {
-        cout << "acquistato " << a.getNome() << " dalla spesa: " << getTitolo() << "\n";
+        cout << a.getNome() << " spuntato dalla lista " << getTitolo();
         it->setStato(true);
     }
     return it->isStato();

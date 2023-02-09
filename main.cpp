@@ -38,10 +38,19 @@ int main() {
     cout << u1->to_string();
 
     u1->compra(a1);
+    u1->compra(a4);
+
+    cout << endl;
 
     u2->compra(a1);
     u2->compra(a2);
+    u2->compra(a3);
+
+    cout << u2->to_string();
+    cout << u1->to_string();
 
     delete ln1;
     delete ln2;
+    delete u1;
+    delete u2;
 }
