@@ -3,28 +3,45 @@
 #include "Articolo.h"
 #include "Lista.h"
 #include "Utente.h"
+#include "Lista.h"
+#include "ListaNotifier.h"
 
 int main() {
-    Articolo a = Articolo("Mela", "Frutta", 3);
-    Articolo b = Articolo("Pera", "Frutta", 1);
-    Articolo c = Articolo("Bistecca", "Carne", 5);
+    auto* u1=new Utente("Arnold");
+    auto* u2=new Utente("Ronnie");
 
-    Lista l = Lista("Lista1");
-    l.inserisci(a);
-    l.inserisci(b);
-    l.inserisci(c);
+    auto* ln1=new ListaNotifier(*u1);
+    auto* ln2=new ListaNotifier(*u2);
 
-//    std::cout << l.to_string() << std::endl;
-//    l.compra(b);
-//    std::cout << l.to_string() << std::endl;
+    Articolo a1("Avena", "Carboidrati", 3);
+    Articolo a2("Olio", "Grassi", 1);
+    Articolo a3("Pollo", "Proteine", 1);
+    Articolo a4("Uova", "Proteine", 1);
 
-    Utente u1 = Utente("mario.rossi");
-    u1.addLista(l);
+    Lista s1("Lunedì");
+    Lista s2("Martedì");
 
-    cout << u1.to_string();
-    u1.compra(b);
-    cout << u1.to_string();
-    cout << u1.rimasti("Lista1") << " articoli rimasti\n";
+    s1.inserisci(a1);
+    s1.inserisci(a2);
+    s1.inserisci(a4);
 
-    return 0;
+    s2.inserisci(a1);
+    s2.inserisci(a2);
+    s2.inserisci(a3);
+
+    u1->addLista(s1);
+
+    u2->addLista(s1);
+    u2->addLista(s2);
+
+    cout << u2->to_string();
+    cout << u1->to_string();
+
+    u1->compra(a1);
+
+    u2->compra(a1);
+    u2->compra(a2);
+
+    delete ln1;
+    delete ln2;
 }

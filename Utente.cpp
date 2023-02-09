@@ -72,8 +72,10 @@ const string Utente::to_string() const {
 }
 
 void Utente::compra(const Articolo &a) {
-    for (auto it = lista.begin(); it != lista.end(); it++)
+    for (auto it = lista.begin(); it != lista.end(); it++) {
+        cout << username << " ha ";
         it->compra(a);
+    }
     notify();
 }
 

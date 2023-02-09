@@ -102,7 +102,8 @@
 				3,
 				4,
 				6,
-				8
+				8,
+				9
 			]
 		}
 	],
@@ -155,6 +156,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "Utente.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ListaNotifier.h",
 			"sourceGroupIndex" : 1
 		}
 	],
