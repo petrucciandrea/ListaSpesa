@@ -14,7 +14,7 @@ protected:
     Articolo a1 = Articolo("Mela", "Frutta", 2);
     Articolo a2 = Articolo("Pera", "Frutta", 3);
     Articolo a3 = Articolo("Cavolo", "Verdura", 5);
-    Articolo a4 = Articolo("Pollo", "CArne", 5);
+    Articolo a4 = Articolo("Pollo", "Carne", 5);
     Articolo a5 = Articolo("Bresaola", "Affettato", 5);
 
     virtual void SetUp(){
