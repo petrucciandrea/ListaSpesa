@@ -15,11 +15,11 @@ void Utente::setUsername(const string &username) {
 }
 
 const list<Lista> &Utente::getLista() const {
-    return lista;
+    return liste;
 }
 
-void Utente::setLista(const list<Lista> &lista) {
-    Utente::lista = lista;
+void Utente::setLista(const list<Lista> &liste) {
+    Utente::liste = liste;
 }
 
 
@@ -38,41 +38,49 @@ void Utente::unsubscribe(Observer *o) {
 }
 
 void Utente::addLista(const Lista &l) {
-    auto it = find(lista.begin(), lista.end(), l.getTitolo());
-    if (it == lista.end()) {
-        lista.push_back(l);
+    auto it = find(liste.begin(), liste.end(), l.getTitolo());
+    if (it == liste.end()) {
+        liste.push_back(l);
         notify();
     } else
         cout << "Lista già presente" << endl;
 }
 
 void Utente::removeLista(const string &t) {
-    auto it = find(lista.begin(), lista.end(), t);
-    if (it != lista.end()) {
-        lista.erase(it);
+    auto it = find(liste.begin(), liste.end(), t);
+    if (it != liste.end()) {
+        liste.erase(it);
         notify();
     }
 }
 
 void Utente::aggiungiArticolo(const string &t, const Articolo &a) {
-    auto it = find(lista.begin(), lista.end(), t);
-    if (it != lista.end()) {
+    auto it = find(liste.begin(), liste.end(), t);
+    if (it != liste.end()) {
         it->inserisci(a);
+        notify();
+    }
+}
+
+void Utente::removeArticolo(const string &t, const Articolo &a) {
+    auto it = find(liste.begin(), liste.end(), t);
+    if (it != liste.end()) {
+        it->elimina(a);
         notify();
     }
 }
 
 const string Utente::to_string() const {
     string strOut = "\n" + username + ":\n";
-//    for (auto it = lista.begin(); it != lista.end(); it++)
-//        cout << "nome della lista :" << it->getTitolo() << endl << it->to_string() << "Articoli totali da acquistare :" << it->getRimasti() << " nella lista " << it->getTitolo() << endl;
-    for (Lista l: lista)
+//    for (auto it = liste.begin(); it != liste.end(); it++)
+//        cout << "nome della liste :" << it->getTitolo() << endl << it->to_string() << "Articoli totali da acquistare :" << it->getRimasti() << " nella liste " << it->getTitolo() << endl;
+    for (Lista l: liste)
         strOut += "  " + l.to_string() + "\n";
     return strOut;
 }
 
 void Utente::compra(const Articolo &a) {
-    for (auto it = lista.begin(); it != lista.end(); it++) {
+    for (auto it = liste.begin(); it != liste.end(); it++) {
         if(it->compra(a))
             cout << " da " << username << endl;
     }
@@ -80,13 +88,13 @@ void Utente::compra(const Articolo &a) {
 }
 
 const int Utente::getNumListe() {
-    return lista.size();
+    return liste.size();
 }
 
-const int Utente::rimasti(const string &t) {
+const int Utente::getRimasti(const string &t) {
     int n = 0;
-    auto it = find(lista.begin(), lista.end(), t);
-    if (it != lista.end()) {
+    auto it = find(liste.begin(), liste.end(), t);
+    if (it != liste.end()) {
         n = it->getRimasti();
     }
     return n;

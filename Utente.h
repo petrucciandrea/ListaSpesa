@@ -33,9 +33,11 @@ public:
 
     void addLista(const Lista &l);
 
-    void removeLista(const string &l);
+    void removeLista(const string &t);
 
     void aggiungiArticolo(const string &t, const Articolo &a);
+
+    void removeArticolo(const string &t, const Articolo &a);
 
     const string to_string() const;
 
@@ -43,7 +45,7 @@ public:
 
     const int getNumListe();
 
-    const int rimasti(const string &t);
+    const int getRimasti(const string &t);
 
     virtual ~Utente() = default;
 
@@ -53,7 +55,7 @@ public:
 
 protected:
     string username;
-    list<Lista> lista;
+    list<Lista> liste;
     list<Observer *> observer;
 };
 
