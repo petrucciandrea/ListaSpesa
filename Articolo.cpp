@@ -4,19 +4,21 @@
 
 #include "Articolo.h"
 
+#include <utility>
+
 /**
  * Costruttore
  * @param n nome
  * @param c categoria
  * @param q quantità
  */
-Articolo::Articolo(const string &n, const string &c, int q) : nome(n), categoria(c), qnt(q) {}
+Articolo::Articolo(string n, string c, int q) : nome(std::move(n)), categoria(std::move(c)), qnt(q) {}
 
 /**
  * Getter
  * @return nome
  */
-const string &Articolo::getNome() const {
+string &Articolo::getNome() {
     return nome;
 }
 
@@ -24,15 +26,15 @@ const string &Articolo::getNome() const {
  * Setter
  * @param nome
  */
-void Articolo::setNome(const string &nome) {
-    Articolo::nome = nome;
+void Articolo::setNome(const string &n) {
+    Articolo::nome = n;
 }
 
 /**
  * Getter
  * @return categoria
  */
-const string &Articolo::getCategoria() const {
+string &Articolo::getCategoria() {
     return categoria;
 }
 
@@ -40,8 +42,8 @@ const string &Articolo::getCategoria() const {
  * Setter
  * @param categoria
  */
-void Articolo::setCategoria(const string &categoria) {
-    Articolo::categoria = categoria;
+void Articolo::setCategoria(const string &c) {
+    Articolo::categoria = c;
 }
 
 /**
@@ -56,8 +58,8 @@ int Articolo::getQnt() const {
  * Setter
  * @param qnt quantità
  */
-void Articolo::setQnt(int qnt) {
-    Articolo::qnt = qnt;
+void Articolo::setQnt(int q) {
+    Articolo::qnt = q;
 }
 
 /**
@@ -72,14 +74,14 @@ bool Articolo::isStato() const {
  * Setter
  * @param stato
  */
-void Articolo::setStato(bool stato) {
-    Articolo::stato = stato;
+void Articolo::setStato(bool s) {
+    Articolo::stato = s;
 }
 
 /**
  * Formattazione
  * @return stringa
  */
-const string Articolo::to_string() const {
+string Articolo::to_string() {
     return nome + " (" + categoria + ") qnt. " + std::to_string(qnt) + " [" + ((stato) ? "comprato" : "da comprare") + "]";
 }

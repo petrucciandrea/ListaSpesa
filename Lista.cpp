@@ -4,37 +4,31 @@
 
 #include "Lista.h"
 
+#include <utility>
+
 /**
  * Costruttore
  * @param t titolo
  */
-Lista::Lista(const string &t) : titolo(t) {}
+Lista::Lista(string t) : titolo(std::move(t)) {}
 
 /**
  * Getter
  * @return
  */
-const string &Lista::getTitolo() const {
+string &Lista::getTitolo() {
     return titolo;
 }
 
-void Lista::setTitolo(const string &titolo) {
-    Lista::titolo = titolo;
-}
-
-/**
- * Getter
- * @return articoli
- */
-const list<Articolo> &Lista::getArticoli() const {
-    return articoli;
+void Lista::setTitolo(const string &t) {
+    Lista::titolo = t;
 }
 
 void Lista::inserisci(const Articolo &a) {
     articoli.push_back(a);
 }
 
-void Lista::elimina(const Articolo &a) {
+void Lista::elimina(Articolo a) {
     auto it = find(articoli.begin(), articoli.end(), a.getNome());
     if (it != articoli.end()) {
         articoli.erase(it);
@@ -45,7 +39,7 @@ void Lista::elimina(const Articolo &a) {
  * Getter
  * @return numero articoli
  */
-const int Lista::getNumArticoli() {
+unsigned long Lista::getNumArticoli() {
     return articoli.size();
 }
 
@@ -53,11 +47,11 @@ const int Lista::getNumArticoli() {
  * Getter
  * @return numero articoli da comprare
  */
-const int Lista::getRimasti() {
+int Lista::getRimasti() {
     int n = 0;
-    for (Articolo a: articoli)
+    for (const Articolo& a: articoli)
         if (!a.isStato())
-            n+= a.getQnt();
+            n++;
     return n;
 }
 
@@ -67,14 +61,17 @@ const int Lista::getRimasti() {
  */
 string Lista::to_string() {
     string strOut = getTitolo() + ":\n";
-//    for (auto it = articoli.begin(); it != articoli.end(); it++)
-//        strOut += "    -" + it->to_string() + "\n";
     for (Articolo a: articoli)
         strOut += " -" + a.to_string() + "\n";
     return strOut;
 }
 
-bool Lista::compra(const Articolo &a) {
+/**
+ * Compra l'articolo passato
+ * @param a
+ * @return
+ */
+bool Lista::compra(Articolo a) {
     auto it = find(articoli.begin(), articoli.end(), a.getNome());
     if (it != articoli.end()) {
         cout << a.getNome() << " spuntato dalla lista " << getTitolo();
@@ -83,7 +80,12 @@ bool Lista::compra(const Articolo &a) {
     return it->isStato();
 }
 
-bool Lista::cerca(const Articolo &a) {
+/**
+ * Cerca se l'articolo passato è presente o meno
+ * @param a
+ * @return
+ */
+bool Lista::cerca(Articolo a) {
     auto it = find(articoli.begin(), articoli.end(), a.getNome());
     return it != articoli.end();
 }

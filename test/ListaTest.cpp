@@ -21,16 +21,16 @@ protected:
 
 TEST_F(ListaSuite, Costructor){
     ASSERT_EQ("Lunedì", lista.getTitolo());
-    ASSERT_EQ(10, lista.getRimasti());
+    ASSERT_EQ(3, lista.getRimasti());
 }
 
 TEST_F(ListaSuite, InOut) {
     lista.setTitolo("Martedì");
     ASSERT_EQ("Martedì", lista.getTitolo());
-    ASSERT_EQ(10, lista.getRimasti());
+    ASSERT_EQ(3, lista.getRimasti());
     ASSERT_EQ(3, lista.getNumArticoli());
     lista.compra(a2);
-    ASSERT_EQ(7, lista.getRimasti());
+    ASSERT_EQ(2, lista.getRimasti());
 }
 
 TEST_F(ListaSuite, toString) {

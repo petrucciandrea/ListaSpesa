@@ -13,14 +13,13 @@ class Articolo {
 
 public:
 
+    Articolo(string nome, string categoria, int qnt);
 
-    Articolo(const string &nome, const string &categoria, int qnt);
-
-    const string &getNome() const;
+    string &getNome();
 
     void setNome(const string &nome);
 
-    const string &getCategoria() const;
+    string &getCategoria();
 
     void setCategoria(const string &categoria);
 
@@ -32,9 +31,9 @@ public:
 
     void setStato(bool stato);
 
-    const string to_string() const;
+    string to_string();
 
-    bool operator==(const string str) {
+    bool operator==(const string& str) {
         return (str == nome);
     }
 

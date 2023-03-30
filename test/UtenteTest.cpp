@@ -42,7 +42,7 @@ TEST_F(UtenteSuite, Setter){
     utente.aggiungiArticolo("Lunedì", a);
     ASSERT_EQ("Cris", utente.getUsername());
     ASSERT_EQ(1, utente.getNumListe());
-    ASSERT_EQ(lista1.getRimasti()+2, utente.getRimasti("Lunedì"));
+    ASSERT_EQ(lista1.getRimasti()+1, utente.getRimasti("Lunedì"));
     utente.removeArticolo("Lunedì", a);
     ASSERT_EQ(lista1.getRimasti(), utente.getRimasti("Lunedì"));
 }

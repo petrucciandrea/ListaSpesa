@@ -15,15 +15,11 @@
 
 class Utente : public Subject {
 public:
-    explicit Utente(const string &u);
+    explicit Utente(string u);
 
-    const string &getUsername() const;
+    string &getUsername();
 
     void setUsername(const string &username);
-
-    const list<Lista> &getLista() const;
-
-    void setLista(const list<Lista> &lista);
 
     virtual void notify() override;
 
@@ -31,7 +27,7 @@ public:
 
     virtual void unsubscribe(Observer *o) override;
 
-    void addLista(const Lista &l);
+    void addLista(Lista l);
 
     void removeLista(const string &t);
 
@@ -39,17 +35,17 @@ public:
 
     void removeArticolo(const string &t, const Articolo &a);
 
-    const string to_string() const;
+    string to_string();
 
     void compra(const Articolo &a);
 
-    const int getNumListe();
+    unsigned long getNumListe();
 
-    const int getRimasti(const string &t);
+    int getRimasti(const string &t);
 
     virtual ~Utente() = default;
 
-    bool operator==(const string s) {
+    bool operator==(const string& s) {
         return (s == username);
     }
 

@@ -4,29 +4,21 @@
 
 #include "Utente.h"
 
-Utente::Utente(const string &u) : username(u) {}
+#include <utility>
 
-const string &Utente::getUsername() const {
+Utente::Utente(string u) : username(std::move(u)) {}
+
+string &Utente::getUsername() {
     return username;
 }
 
-void Utente::setUsername(const string &username) {
-    Utente::username = username;
+void Utente::setUsername(const string &u) {
+    Utente::username = u;
 }
-
-const list<Lista> &Utente::getLista() const {
-    return liste;
-}
-
-void Utente::setLista(const list<Lista> &liste) {
-    Utente::liste = liste;
-}
-
 
 void Utente::notify() {
-    for (auto it = observer.begin(); it != observer.end(); it++) {
-        (*it)->update();
-    }
+    for (auto & it : observer)
+        it->update();
 }
 
 void Utente::subscribe(Observer *o) {
@@ -37,7 +29,7 @@ void Utente::unsubscribe(Observer *o) {
     observer.remove(o);
 }
 
-void Utente::addLista(const Lista &l) {
+void Utente::addLista(Lista l) {
     auto it = find(liste.begin(), liste.end(), l.getTitolo());
     if (it == liste.end()) {
         liste.push_back(l);
@@ -70,32 +62,25 @@ void Utente::removeArticolo(const string &t, const Articolo &a) {
     }
 }
 
-const string Utente::to_string() const {
+string Utente::to_string() {
     string strOut = "\n" + username + ":\n";
-//    for (auto it = liste.begin(); it != liste.end(); it++)
-//        cout << "nome della liste :" << it->getTitolo() << endl << it->to_string() << "Articoli totali da acquistare :" << it->getRimasti() << " nella liste " << it->getTitolo() << endl;
     for (Lista l: liste)
         strOut += "  " + l.to_string() + "\n";
     return strOut;
 }
 
 void Utente::compra(const Articolo &a) {
-    for (auto it = liste.begin(); it != liste.end(); it++) {
-        if(it->compra(a))
+    for (auto & it : liste)
+        if(it.compra(a))
             cout << " da " << username << endl;
-    }
     notify();
 }
 
-const int Utente::getNumListe() {
+unsigned long Utente::getNumListe() {
     return liste.size();
 }
 
-const int Utente::getRimasti(const string &t) {
-    int n = 0;
+int Utente::getRimasti(const string &t) {
     auto it = find(liste.begin(), liste.end(), t);
-    if (it != liste.end()) {
-        n = it->getRimasti();
-    }
-    return n;
+    return (it != liste.end()) ? it->getRimasti() : 0;
 }

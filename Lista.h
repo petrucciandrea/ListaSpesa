@@ -19,29 +19,27 @@ using namespace std;
 
 class Lista {
 public:
-    explicit Lista(const string &t);
+    explicit Lista(string t);
 
-    const string &getTitolo() const;
+    string &getTitolo();
 
     void setTitolo(const string &titolo);
 
-    const list<Articolo> &getArticoli() const;
-
     void inserisci(const Articolo &a);
 
-    void elimina(const Articolo &a);
+    void elimina(Articolo a);
 
-    bool compra(const Articolo &a);
+    bool compra(Articolo a);
 
-    bool cerca(const Articolo &a);
+    bool cerca(Articolo a);
 
-    const int getNumArticoli();
+    unsigned long getNumArticoli();
 
-    const int getRimasti();
+    int getRimasti();
 
     string to_string();
 
-    bool operator==(const string str) {
+    bool operator==(const string& str) {
         return (str == titolo);
     }
 
