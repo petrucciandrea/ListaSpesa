@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "test/lib/googletest/libgtestd.a"
+			"path" : "lib/libgtest.a"
 		}
 	],
 	"backtrace" : 3,
@@ -15,12 +15,14 @@
 			"cxx_library_with_type",
 			"cxx_library",
 			"install",
-			"include_directories"
+			"install_project",
+			"include_directories",
+			"target_compile_features"
 		],
 		"files" : 
 		[
-			"test/lib/googletest/cmake/internal_utils.cmake",
-			"test/lib/googletest/CMakeLists.txt"
+			"test/lib/googletest/googletest/cmake/internal_utils.cmake",
+			"test/lib/googletest/googletest/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -30,32 +32,44 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 98,
+				"line" : 126,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 184,
+				"line" : 213,
 				"parent" : 1
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 157,
+				"line" : 159,
 				"parent" : 2
-			},
-			{
-				"command" : 3,
-				"file" : 1,
-				"line" : 114,
-				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 74,
+				"line" : 166,
 				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 330,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 116,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 200,
+				"parent" : 2
 			}
 		]
 	},
@@ -68,21 +82,21 @@
 					"fragment" : "-g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fcolor-diagnostics"
 				},
 				{
-					"fragment" : "  -DGTEST_HAS_PTHREAD=1  "
+					"fragment" : " -DGTEST_HAS_PTHREAD=1  "
 				},
 				{
-					"fragment" : "-std=gnu++17"
+					"fragment" : "-std=c++17"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
-					"path" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest/include"
+					"backtrace" : 6,
+					"path" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest/googletest/include"
 				},
 				{
-					"backtrace" : 5,
-					"path" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest"
+					"backtrace" : 6,
+					"path" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -90,7 +104,7 @@
 			{
 				"backtraces" : 
 				[
-					3
+					7
 				],
 				"standard" : "17"
 			},
@@ -100,13 +114,13 @@
 			]
 		}
 	],
-	"id" : "gtest::@838963ba4e42fda1c95a",
+	"id" : "gtest::@c72fc6c7adf34f6238a3",
 	"install" : 
 	{
 		"destinations" : 
 		[
 			{
-				"backtrace" : 4,
+				"backtrace" : 5,
 				"path" : "lib"
 			}
 		],
@@ -116,11 +130,11 @@
 		}
 	},
 	"name" : "gtest",
-	"nameOnDisk" : "libgtestd.a",
+	"nameOnDisk" : "libgtest.a",
 	"paths" : 
 	{
-		"build" : "test/lib/googletest",
-		"source" : "test/lib/googletest"
+		"build" : "test/lib/googletest/googletest",
+		"source" : "test/lib/googletest/googletest"
 	},
 	"sourceGroups" : 
 	[
@@ -137,7 +151,7 @@
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "test/lib/googletest/src/gtest-all.cc",
+			"path" : "test/lib/googletest/googletest/src/gtest-all.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

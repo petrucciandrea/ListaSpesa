@@ -995,7 +995,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "3"
+			"value" : "5"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1566,10 +1566,6 @@
 			"properties" : 
 			[
 				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
 					"name" : "HELPSTRING",
 					"value" : ""
 				}
@@ -1647,7 +1643,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest/generated"
+			"value" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest/googletest/generated"
 		},
 		{
 			"name" : "gmock_BINARY_DIR",
@@ -1659,7 +1655,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest-main/googlemock"
+			"value" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest/googlemock"
 		},
 		{
 			"name" : "gmock_IS_TOP_LEVEL",
@@ -1695,7 +1691,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest-main/googlemock"
+			"value" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest/googlemock"
 		},
 		{
 			"name" : "gmock_build_tests",
@@ -1735,7 +1731,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest-main"
+			"value" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest"
 		},
 		{
 			"name" : "googletest-distribution_IS_TOP_LEVEL",
@@ -1759,7 +1755,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest-main"
+			"value" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest"
 		},
 		{
 			"name" : "gtest_BINARY_DIR",
@@ -1771,7 +1767,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest"
+			"value" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest/googletest"
 		},
 		{
 			"name" : "gtest_IS_TOP_LEVEL",
@@ -1795,7 +1791,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest"
+			"value" : "/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest/googletest"
 		},
 		{
 			"name" : "gtest_build_samples",

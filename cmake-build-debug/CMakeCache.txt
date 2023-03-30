@@ -297,7 +297,7 @@ ListaSpesa_IS_TOP_LEVEL:STATIC=ON
 ListaSpesa_SOURCE_DIR:STATIC=/Users/andreapetrucci/CLionProjects/ListaSpesa
 
 //Value Computed by CMake
-gmock_BINARY_DIR:STATIC=/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest-main/googlemock
+gmock_BINARY_DIR:STATIC=/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest/googlemock
 
 //Value Computed by CMake
 gmock_IS_TOP_LEVEL:STATIC=OFF
@@ -306,7 +306,7 @@ gmock_IS_TOP_LEVEL:STATIC=OFF
 gmock_LIB_DEPENDS:STATIC=general;gtest;
 
 //Value Computed by CMake
-gmock_SOURCE_DIR:STATIC=/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest-main/googlemock
+gmock_SOURCE_DIR:STATIC=/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest/googlemock
 
 //Build all of Google Mock's own tests.
 gmock_build_tests:BOOL=OFF
@@ -315,22 +315,22 @@ gmock_build_tests:BOOL=OFF
 gmock_main_LIB_DEPENDS:STATIC=general;gmock;
 
 //Value Computed by CMake
-googletest-distribution_BINARY_DIR:STATIC=/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest-main
+googletest-distribution_BINARY_DIR:STATIC=/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest
 
 //Value Computed by CMake
 googletest-distribution_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-googletest-distribution_SOURCE_DIR:STATIC=/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest-main
+googletest-distribution_SOURCE_DIR:STATIC=/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest
+gtest_BINARY_DIR:STATIC=/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest/googletest
 
 //Value Computed by CMake
 gtest_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest
+gtest_SOURCE_DIR:STATIC=/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest/googletest
 
 //Build gtest's sample programs.
 gtest_build_samples:BOOL=OFF
@@ -478,7 +478,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -528,8 +528,6 @@ FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/Users/andreapetrucci/opt/an
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 PYTHONINTERP_FOUND:INTERNAL=TRUE
-//ADVANCED property for variable: PYTHON_EXECUTABLE
-PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 PYTHON_EXECUTABLE:INTERNAL=/Users/andreapetrucci/opt/anaconda3/bin/python3.9
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
@@ -539,7 +537,7 @@ _Python_EXECUTABLE:INTERNAL=/Users/andreapetrucci/opt/anaconda3/bin/python3.9
 _Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;9;7;64;;cpython-39-darwin;/Users/andreapetrucci/opt/anaconda3/lib/python3.9;/Users/andreapetrucci/opt/anaconda3/lib/python3.9;/Users/andreapetrucci/opt/anaconda3/lib/python3.9/site-packages;/Users/andreapetrucci/opt/anaconda3/lib/python3.9/site-packages
 _Python_INTERPRETER_SIGNATURE:INTERNAL=2969656cd7f918612a2a109a88f23fce
 cmake_package_name:INTERNAL=GTest
-generated_dir:INTERNAL=/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest/generated
+generated_dir:INTERNAL=/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest/googletest/generated
 //ADVANCED property for variable: gmock_build_tests
 gmock_build_tests-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: gtest_build_samples

@@ -3,7 +3,7 @@
 3	550	1673712941335264183	CMakeFiles/ListaSpesa.dir/Articolo.cpp.o	173777a05dfec3ee
 11	2174	1680171157172193657	CMakeFiles/core.dir/Utente.cpp.o	a0d2221ed228dc59
 5	841	1676104194426516272	test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	dba45ba795f3a8a3
-22	484	1680171988317129103	build.ninja	a2f66645f9c241e9
+22	484	1680172307646522427	build.ninja	a2f66645f9c241e9
 16	1341	1678985752403014784	CMakeFiles/core.dir/Articolo.cpp.o	98176f5f331be5ec
 3	824	1676104194408926942	test/CMakeFiles/runListaSpesaTest.dir/runAllTests.cpp.o	9d3b5525117331e3
 666	729	1680171722924567105	ListaSpesa	fa7b18a8fcafc80c
@@ -20,3 +20,13 @@
 2760	2831	1676104196423243000	test/lib/googletest/libgtestd.a	c1d1861b8762d63b
 2831	2873	1676104196466209000	test/lib/googletest/libgtest_maind.a	9a563dddf0ade68c
 1164	1258	1680171751351557620	test/runListaSpesaTest	2ee6328b71120ee9
+3	1440	1680172382902998756	test/CMakeFiles/runListaSpesaTest.dir/runAllTests.cpp.o	d8cdd4493f8e86aa
+4	1665	1680172383126897143	test/CMakeFiles/runListaSpesaTest.dir/ObserverTest.cpp.o	d1aacaa180ab898f
+3	1723	1680172383182284147	test/CMakeFiles/runListaSpesaTest.dir/ArticoloTest.cpp.o	479b4c0820665466
+4	1773	1680172383236669685	test/CMakeFiles/runListaSpesaTest.dir/ListaTest.cpp.o	7ab3615bd3f632d5
+4	1816	1680172383279783849	test/CMakeFiles/runListaSpesaTest.dir/UtenteTest.cpp.o	d74f840f4b06260d
+1441	2454	1680172383923389700	test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	8dc020d020f6d5ec
+5	4221	1680172385677855439	test/lib/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	b3e9011c6a08a26d
+4221	4347	1680172385824783000	lib/libgtest.a	ad8dd73198f89b61
+4347	4403	1680172385882014000	lib/libgtest_main.a	884526612ba2bc04
+4404	4581	1680172386051110623	test/runListaSpesaTest	eced7bd841dccf18
