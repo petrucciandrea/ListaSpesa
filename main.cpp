@@ -29,6 +29,8 @@ int main() {
     s2.inserisci(a2);
     s2.inserisci(a3);
 
+    cout<<s1.cerca(a1)<<endl<<s1.cerca(a3);
+
     u1->addLista(s1);
 
     u2->addLista(s1);

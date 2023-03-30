@@ -219,15 +219,15 @@ build test/CMakeFiles/runListaSpesaTest.dir/ListaTest.cpp.o: CXX_COMPILER__runLi
   OBJECT_DIR = test/CMakeFiles/runListaSpesaTest.dir
   OBJECT_FILE_DIR = test/CMakeFiles/runListaSpesaTest.dir
 
-build test/CMakeFiles/runListaSpesaTest.dir/UtenteTest.cpp.o: CXX_COMPILER__runListaSpesaTest_Debug /Users/andreapetrucci/CLionProjects/ListaSpesa/test/UtenteTest.cpp || cmake_object_order_depends_target_runListaSpesaTest
-  DEP_FILE = test/CMakeFiles/runListaSpesaTest.dir/UtenteTest.cpp.o.d
+build test/CMakeFiles/runListaSpesaTest.dir/ObserverTest.cpp.o: CXX_COMPILER__runListaSpesaTest_Debug /Users/andreapetrucci/CLionProjects/ListaSpesa/test/ObserverTest.cpp || cmake_object_order_depends_target_runListaSpesaTest
+  DEP_FILE = test/CMakeFiles/runListaSpesaTest.dir/ObserverTest.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fcolor-diagnostics -std=gnu++17
   INCLUDES = -I/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest -isystem /Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest/include
   OBJECT_DIR = test/CMakeFiles/runListaSpesaTest.dir
   OBJECT_FILE_DIR = test/CMakeFiles/runListaSpesaTest.dir
 
-build test/CMakeFiles/runListaSpesaTest.dir/ObserverTest.cpp.o: CXX_COMPILER__runListaSpesaTest_Debug /Users/andreapetrucci/CLionProjects/ListaSpesa/test/ObserverTest.cpp || cmake_object_order_depends_target_runListaSpesaTest
-  DEP_FILE = test/CMakeFiles/runListaSpesaTest.dir/ObserverTest.cpp.o.d
+build test/CMakeFiles/runListaSpesaTest.dir/UtenteTest.cpp.o: CXX_COMPILER__runListaSpesaTest_Debug /Users/andreapetrucci/CLionProjects/ListaSpesa/test/UtenteTest.cpp || cmake_object_order_depends_target_runListaSpesaTest
+  DEP_FILE = test/CMakeFiles/runListaSpesaTest.dir/UtenteTest.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fcolor-diagnostics -std=gnu++17
   INCLUDES = -I/Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest -isystem /Users/andreapetrucci/CLionProjects/ListaSpesa/test/lib/googletest/include
   OBJECT_DIR = test/CMakeFiles/runListaSpesaTest.dir
@@ -241,7 +241,7 @@ build test/CMakeFiles/runListaSpesaTest.dir/ObserverTest.cpp.o: CXX_COMPILER__ru
 #############################################
 # Link the executable test/runListaSpesaTest
 
-build test/runListaSpesaTest: CXX_EXECUTABLE_LINKER__runListaSpesaTest_Debug test/CMakeFiles/runListaSpesaTest.dir/runAllTests.cpp.o test/CMakeFiles/runListaSpesaTest.dir/ArticoloTest.cpp.o test/CMakeFiles/runListaSpesaTest.dir/ListaTest.cpp.o test/CMakeFiles/runListaSpesaTest.dir/UtenteTest.cpp.o test/CMakeFiles/runListaSpesaTest.dir/ObserverTest.cpp.o | test/lib/googletest/libgtestd.a test/lib/googletest/libgtest_maind.a libcore.a test/lib/googletest/libgtestd.a || libcore.a test/lib/googletest/libgtest_maind.a test/lib/googletest/libgtestd.a
+build test/runListaSpesaTest: CXX_EXECUTABLE_LINKER__runListaSpesaTest_Debug test/CMakeFiles/runListaSpesaTest.dir/runAllTests.cpp.o test/CMakeFiles/runListaSpesaTest.dir/ArticoloTest.cpp.o test/CMakeFiles/runListaSpesaTest.dir/ListaTest.cpp.o test/CMakeFiles/runListaSpesaTest.dir/ObserverTest.cpp.o test/CMakeFiles/runListaSpesaTest.dir/UtenteTest.cpp.o | test/lib/googletest/libgtestd.a test/lib/googletest/libgtest_maind.a libcore.a test/lib/googletest/libgtestd.a || libcore.a test/lib/googletest/libgtest_maind.a test/lib/googletest/libgtestd.a
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk
   LINK_LIBRARIES = test/lib/googletest/libgtestd.a  test/lib/googletest/libgtest_maind.a  libcore.a  test/lib/googletest/libgtestd.a
   OBJECT_DIR = test/CMakeFiles/runListaSpesaTest.dir

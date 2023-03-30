@@ -33,11 +33,13 @@ public:
 
     bool compra(const Articolo &a);
 
+    bool cerca(const Articolo &a);
+
     const int getNumArticoli();
 
     const int getRimasti();
 
-    const string to_string() const;
+    string to_string();
 
     bool operator==(const string str) {
         return (str == titolo);

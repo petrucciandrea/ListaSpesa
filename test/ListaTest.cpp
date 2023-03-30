@@ -36,3 +36,10 @@ TEST_F(ListaSuite, InOut) {
 TEST_F(ListaSuite, toString) {
     ASSERT_EQ("Lunedì:\n -"+a1.to_string()+"\n -"+a2.to_string()+"\n -"+a3.to_string()+"\n", lista.to_string());
 }
+
+TEST_F(ListaSuite, ricerca){
+    Articolo a5 = Articolo("Pollo", "Carne", 2);
+    Articolo a6 = Articolo("Pera", "Frutta", 3);
+    ASSERT_FALSE(lista.cerca(a5));
+    ASSERT_TRUE(lista.cerca(a6));
+}

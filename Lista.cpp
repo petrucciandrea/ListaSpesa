@@ -4,8 +4,16 @@
 
 #include "Lista.h"
 
+/**
+ * Costruttore
+ * @param t titolo
+ */
 Lista::Lista(const string &t) : titolo(t) {}
 
+/**
+ * Getter
+ * @return
+ */
 const string &Lista::getTitolo() const {
     return titolo;
 }
@@ -14,6 +22,10 @@ void Lista::setTitolo(const string &titolo) {
     Lista::titolo = titolo;
 }
 
+/**
+ * Getter
+ * @return articoli
+ */
 const list<Articolo> &Lista::getArticoli() const {
     return articoli;
 }
@@ -29,10 +41,18 @@ void Lista::elimina(const Articolo &a) {
     }
 }
 
+/**
+ * Getter
+ * @return numero articoli
+ */
 const int Lista::getNumArticoli() {
     return articoli.size();
 }
 
+/**
+ * Getter
+ * @return numero articoli da comprare
+ */
 const int Lista::getRimasti() {
     int n = 0;
     for (Articolo a: articoli)
@@ -41,7 +61,11 @@ const int Lista::getRimasti() {
     return n;
 }
 
-const string Lista::to_string() const {
+/**
+ * Formattazione
+ * @return stringa
+ */
+string Lista::to_string() {
     string strOut = getTitolo() + ":\n";
 //    for (auto it = articoli.begin(); it != articoli.end(); it++)
 //        strOut += "    -" + it->to_string() + "\n";
@@ -57,4 +81,9 @@ bool Lista::compra(const Articolo &a) {
         it->setStato(true);
     }
     return it->isStato();
+}
+
+bool Lista::cerca(const Articolo &a) {
+    auto it = find(articoli.begin(), articoli.end(), a.getNome());
+    return it != articoli.end();
 }

@@ -13,6 +13,7 @@ class Articolo {
 
 public:
 
+
     Articolo(const string &nome, const string &categoria, int qnt);
 
     const string &getNome() const;
