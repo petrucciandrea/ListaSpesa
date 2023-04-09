@@ -63,3 +63,13 @@
 622	1649	1680179729998042511	test/CMakeFiles/runListaSpesaTest.dir/ObserverTest.cpp.o	d1aacaa180ab898f
 725	1788	1680179730137324393	test/CMakeFiles/runListaSpesaTest.dir/UtenteTest.cpp.o	d74f840f4b06260d
 1788	1892	1680179730238413260	test/runListaSpesaTest	eced7bd841dccf18
+4	794	1681047059230876871	CMakeFiles/core.dir/Articolo.cpp.o	98176f5f331be5ec
+4	828	1681047059266793507	CMakeFiles/core.dir/Lista.cpp.o	29c840bb7f7a1b45
+4	853	1681047059292589104	CMakeFiles/core.dir/main.cpp.o	8ff7b09bbc9ea4d2
+5	950	1681047059390020386	CMakeFiles/core.dir/Utente.cpp.o	a0d2221ed228dc59
+950	1084	1681047059531721000	libcore.a	56aad75727995f0f
+5	1341	1681047059779916363	test/CMakeFiles/runListaSpesaTest.dir/ArticoloTest.cpp.o	479b4c0820665466
+5	1368	1681047059803807380	test/CMakeFiles/runListaSpesaTest.dir/ListaTest.cpp.o	7ab3615bd3f632d5
+794	1814	1681047060254712640	test/CMakeFiles/runListaSpesaTest.dir/ObserverTest.cpp.o	d1aacaa180ab898f
+828	1919	1681047060359317199	test/CMakeFiles/runListaSpesaTest.dir/UtenteTest.cpp.o	d74f840f4b06260d
+1919	2026	1681047060464094546	test/runListaSpesaTest	eced7bd841dccf18

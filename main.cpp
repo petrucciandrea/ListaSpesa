@@ -3,7 +3,6 @@
 #include "Articolo.h"
 #include "Lista.h"
 #include "Utente.h"
-#include "Lista.h"
 #include "ListaNotifier.h"
 
 int main() {

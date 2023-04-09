@@ -12,13 +12,13 @@
  * @param c categoria
  * @param q quantità
  */
-Articolo::Articolo(string n, string c, int q) : nome(std::move(n)), categoria(std::move(c)), qnt(q) {}
+Articolo::Articolo(const string &n, const string &c, int q) : nome(n), categoria(c), qnt(q) {}
 
 /**
  * Getter
  * @return nome
  */
-string &Articolo::getNome() {
+const string &Articolo::getNome() const {
     return nome;
 }
 
@@ -34,7 +34,7 @@ void Articolo::setNome(const string &n) {
  * Getter
  * @return categoria
  */
-string &Articolo::getCategoria() {
+const string &Articolo::getCategoria() const {
     return categoria;
 }
 
@@ -82,6 +82,6 @@ void Articolo::setStato(bool s) {
  * Formattazione
  * @return stringa
  */
-string Articolo::to_string() {
+const string Articolo::to_string() const {
     return nome + " (" + categoria + ") qnt. " + std::to_string(qnt) + " [" + ((stato) ? "comprato" : "da comprare") + "]";
 }
