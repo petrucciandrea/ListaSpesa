@@ -22,14 +22,6 @@ void Lista::setTitolo(const string &titolo) {
     Lista::titolo = titolo;
 }
 
-/**
- * Getter
- * @return articoli
- */
-const list<Articolo> &Lista::getArticoli() const {
-    return articoli;
-}
-
 void Lista::inserisci(const Articolo &a) {
     articoli.push_back(a);
 }
@@ -67,8 +59,6 @@ const int Lista::getRimasti() {
  */
 string Lista::to_string() {
     string strOut = getTitolo() + ":\n";
-//    for (auto it = articoli.begin(); it != articoli.end(); it++)
-//        strOut += "    -" + it->to_string() + "\n";
     for (Articolo a: articoli)
         strOut += " -" + a.to_string() + "\n";
     return strOut;

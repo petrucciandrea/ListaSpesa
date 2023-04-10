@@ -365,7 +365,7 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/Users/andreapetrucci/CLionProjects/ListaSpesa/cmak
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=24
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=25
 //Patch version of cmake used to create the current loaded cache
 CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
 //Path to CMake executable.
@@ -490,7 +490,7 @@ CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24
+CMAKE_ROOT:INTERNAL=/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -531,11 +531,19 @@ PYTHONINTERP_FOUND:INTERNAL=TRUE
 PYTHON_EXECUTABLE:INTERNAL=/Users/andreapetrucci/opt/anaconda3/bin/python3.9
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+//Compiler reason failure
+_Python_Compiler_REASON_FAILURE:INTERNAL=
+//Development reason failure
+_Python_Development_REASON_FAILURE:INTERNAL=
 //Path to a program.
 _Python_EXECUTABLE:INTERNAL=/Users/andreapetrucci/opt/anaconda3/bin/python3.9
 //Python Properties
 _Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;9;7;64;;cpython-39-darwin;/Users/andreapetrucci/opt/anaconda3/lib/python3.9;/Users/andreapetrucci/opt/anaconda3/lib/python3.9;/Users/andreapetrucci/opt/anaconda3/lib/python3.9/site-packages;/Users/andreapetrucci/opt/anaconda3/lib/python3.9/site-packages
 _Python_INTERPRETER_SIGNATURE:INTERNAL=2969656cd7f918612a2a109a88f23fce
+//Interpreter reason failure
+_Python_Interpreter_REASON_FAILURE:INTERNAL=
+//NumPy reason failure
+_Python_NumPy_REASON_FAILURE:INTERNAL=
 cmake_package_name:INTERNAL=GTest
 generated_dir:INTERNAL=/Users/andreapetrucci/CLionProjects/ListaSpesa/cmake-build-debug/test/lib/googletest/googletest/generated
 //ADVANCED property for variable: gmock_build_tests

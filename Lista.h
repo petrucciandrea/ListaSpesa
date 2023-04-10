@@ -25,8 +25,6 @@ public:
 
     void setTitolo(const string &titolo);
 
-    const list<Articolo> &getArticoli() const;
-
     void inserisci(const Articolo &a);
 
     void elimina(const Articolo &a);
