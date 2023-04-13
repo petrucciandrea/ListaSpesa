@@ -28,7 +28,7 @@ void Lista::inserisci(const Articolo &a) {
     articoli.push_back(a);
 }
 
-void Lista::elimina(Articolo a) {
+void Lista::elimina(const Articolo &a) {
     auto it = find(articoli.begin(), articoli.end(), a.getNome());
     if (it != articoli.end()) {
         articoli.erase(it);
@@ -71,7 +71,7 @@ string Lista::to_string() {
  * @param a
  * @return
  */
-bool Lista::compra(Articolo a) {
+bool Lista::compra(const Articolo &a) {
     auto it = find(articoli.begin(), articoli.end(), a.getNome());
     if (it != articoli.end()) {
         cout << a.getNome() << " spuntato dalla lista " << getTitolo();
@@ -85,7 +85,7 @@ bool Lista::compra(Articolo a) {
  * @param a
  * @return
  */
-bool Lista::cerca(Articolo a) {
+const bool Lista::cerca(const Articolo &a) {
     auto it = find(articoli.begin(), articoli.end(), a.getNome());
     return it != articoli.end();
 }

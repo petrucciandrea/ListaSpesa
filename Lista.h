@@ -23,15 +23,15 @@ public:
 
     string &getTitolo();
 
-    void setTitolo(const string &titolo);
+    void setTitolo(const string &t);
 
     void inserisci(const Articolo &a);
 
-    void elimina(Articolo a);
+    void elimina(const Articolo &a);
 
-    bool compra(Articolo a);
+    bool compra(const Articolo &a);
 
-    bool cerca(Articolo a);
+    const bool cerca(const Articolo &a);
 
     unsigned long getNumArticoli();
 

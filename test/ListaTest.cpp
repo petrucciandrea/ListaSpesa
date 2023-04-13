@@ -31,6 +31,10 @@ TEST_F(ListaSuite, InOut) {
     ASSERT_EQ(3, lista.getNumArticoli());
     lista.compra(a2);
     ASSERT_EQ(2, lista.getRimasti());
+    lista.elimina(a1);
+    ASSERT_EQ(1, lista.getRimasti());
+    lista.elimina(a1);
+    ASSERT_EQ(1, lista.getRimasti());
 }
 
 TEST_F(ListaSuite, toString) {
